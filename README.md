@@ -24,6 +24,14 @@ misses:
 
 The full unedited training log is in [`training_log.txt`](training_log.txt).
 
+## Proof it ran — live in VS Code
+
+The actual run on my machine (Python 3.13.5, PyTorch 2.9.1, CPU):
+
+![Final score in the VS Code terminal](screenshots/vscode_final_score.png)
+
+![The model code in VS Code](screenshots/vscode_code.png)
+
 The two misses are the honest, interesting part: divisibility by 3 is genuinely hard to compute from binary bits (there's no single bit that tells you), so the network has to learn a real arithmetic pattern — and it *almost* perfectly does.
 
 ## Run it yourself
